@@ -32,3 +32,10 @@ for i in range(num_courses):
 # Calculate the GPA and print it
 gpa = total_points / total_credits
 print("Your GPA is {:.2f}".format(gpa))
+
+if gpa >= 3.0:
+   print("YOU DID WELL!")
+if gpa <= 2.0:
+   print("GO HOME, YOUR PARENTS GONNA KILL YOU")
+if gpa > 4.5:
+    print("CONGRATULATIONS!! YOU ARE A GENIUS")
