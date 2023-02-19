@@ -11,7 +11,8 @@ for i in range(num_courses):
     grade = (input("Enter the grade for course {}: ".format(i + 1)))
     credits = int(input("Enter the credit for course {}: ".format(i + 1)))
 
-    # Calculate the grade points and add them to the total
+
+# Calculate the grade points and add them to the total
     if grade == "A":
         grade_points = 5.0
     elif grade == "B":
