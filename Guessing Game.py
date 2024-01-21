@@ -1,13 +1,14 @@
 #Guessing Game
 import random
 
-
+#Generate a secret number
 secret_number = random.randint(1,10)
-attempts = 0
 
+
+#Create a simple loop
 while True:
             Guess =  int(input('Guess a number between 1 and 10'))
-            attempts += 1
+            
 
             if Guess > secret_number:
                 print('Try again, Too high')
