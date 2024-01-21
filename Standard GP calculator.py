@@ -1,5 +1,5 @@
 # Ask student to input the number of courses
-num_courses = int(input("Enter the number of courses: "))
+num_courses = int(input("Enter the number of courses:  "))
 
 # Initialize variables
 total_points = 0
@@ -42,3 +42,5 @@ if gpa >= 3.0:
 
 if gpa <= 2.0:
    print("Try harder next time")
+
+#IMPROVEMENT
