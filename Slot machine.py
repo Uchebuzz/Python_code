@@ -137,8 +137,10 @@ def main():
     balance = deposit()
     while True:
         print(f'Current balance is ${balance}')
-        answer = input("press enter to paly(q to quit)")
-        if answer == "q":
+        answer = input("press enter to paly(q to quit) (w to check balance)  ")
+        if answer == "w":
+            print(f"Your current balance is ${balance} ")
+        elif answer == "q":
             break
         balance += spin(balance)
     print(f"you are left witth ${balance}")

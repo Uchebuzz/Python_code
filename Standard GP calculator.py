@@ -1,4 +1,5 @@
 # Ask student to input the number of courses
+name = input("what is your name?  ")
 num_courses = int(input("Enter the number of courses:  "))
 
 # Initialize variables
@@ -32,15 +33,15 @@ for i in range(num_courses):
 
 # Calculate the GPA and print it
 gpa = total_points / total_credits
-print("Your GPA is {:.2f}".format(gpa))
+print(f"{name}, Your GPA is {gpa}".format(gpa))
 
 if gpa > 4.5:
-    print("CONGRATULATIONS!! YOU ARE A GENIUS")
+    print(f"{name}, CONGRATULATIONS!! YOU ARE A GENIUS")
 
 if gpa >= 3.0:
-   print("YOU DID WELL!")
+   print(f"{name}, YOU DID WELL!")
 
 if gpa <= 2.0:
-   print("Try harder next time")
+   print(f"{name}, Try harder next time")
 
 #IMPROVEMENT
