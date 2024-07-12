@@ -1,3 +1,3 @@
 # Random Python practice
 
-This is just random practice of python, to show my flexibility and thought process in developing code
+This is my personal practice on python with interesting projects I personally would work on. The aim was to show my flexibility and thought process in developing code.

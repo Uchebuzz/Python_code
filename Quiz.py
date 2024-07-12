@@ -53,7 +53,7 @@ questions = [
         'options': ['Messi', 'Pele', 'Cristiano Ronaldo', 'Neymar'],
         'answer': 'Messi'
     },
-    # Add more questions as needed
+  
 ]
 
 if __name__ == "__main__":

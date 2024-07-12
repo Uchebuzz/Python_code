@@ -55,7 +55,6 @@ def game():
           
         computer_choice = random.choice(choices)
         name = input(("whats your name?  "))
-        TimeoutError(2)
         user_choice = input("Pick a choice (rock, paper, or scissors): ").lower()
         
         time.sleep(2)
