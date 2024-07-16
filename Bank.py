@@ -3,38 +3,48 @@
 # Withdraws money
 # Makes 
 import time
-class Bank:
-#Deposit = int(input ("How much do you want to deposit? "))
-    def bank_opening():
+
+def Deposit():
+    amount = float(input("Enter an amount to be deposited:$  "))
+
+    if amount < 0:
+        print("enter a valid amount") 
+        return 0
+    else:
+        print(f"Thank you for your deposit of {amount}, it is safe with us")
+
+    return amount
     
-        print("Welcome to the bank of life ")
-        time.sleep(3)
-        name = input("what is your name? ")
-        Address = input("what is your Address? ")
-        Earnings = int(input("How much do you earn? " ))
-
-        Customer = [name, Address, Earnings, Deposit]
-
-        print(f"Welcome {name}, your ${Deposit} is safe with us") 
-
     #bank_opening()
+def Withraw():
+    pass
 
-
-    def Withraw():
-        print("Welcome to the bank of life ")
-        time.sleep(3)
-        Acc_details = input("what is your Account detail? ")
-        Serect_pin = input("what is your secret pin? ")
-        withdraw = int(input("How much do you want to withdraw? " ))
-        if withdraw > Deposit :
-            print("you don't have sufficient balance")
-        elif (withdraw == Deposit) or \
-            (withdraw < Deposit):
-            print(f"{withdraw} has been withdrawn from your account")
+def show_balance():
+    print(f"your balance is ${balance:.2f}")
         
-    def Bank_app ():
-        bank_opening
+balance = 0
+is_running =True
 
-    Bank_app()
+while is_running:
+    print("Welcome to Bank of life")
+    time.sleep(3)
+    print("")
+    print("1. withdraw")
+    print("2. Deposit")
+    print("3. Balance")
+    print("4. Exit")
 
-        
+    choice = input(("what would you like to do today? (1 - 4)    " ))
+
+    if choice == "1":
+        Withraw()
+    elif choice == "2":
+       balance += Deposit()
+    elif choice == "3":
+        show_balance()
+    elif choice == "4":
+         is_running = False
+    else : 
+         print("Enter a valid choice")
+         
+print("Have a nice day")
